@@ -15,24 +15,5 @@ namespace MyProject.Utils
             Console.WriteLine(text);
             Console.ResetColor();
         }
-
-
-        public static Pharmacy AddName(string name)
-        {
-            while (true)
-            {
-
-                if (string.IsNullOrWhiteSpace(name))
-                {
-                    Console.WriteLine("Enter basmayin");
-                }
-                if (name.StartsWith(' '))
-                {
-                    Console.WriteLine("Ad boshlugla bashlaya bilmez");
-                }
-                return new Pharmacy(name);
-            }
-
-        }
     }
 }
